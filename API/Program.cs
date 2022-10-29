@@ -13,6 +13,18 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
+//CorsMethod1
+//builder.Services.AddCors(policy => policy.AddPolicy("corspolicy", build =>
+//{
+//    build.WithOrigins("http://localhost:4200");
+//    build.AllowAnyMethod();
+//    build.AllowAnyHeader();
+//}));
+
+//CorsMethod2
+
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,8 +35,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting();
 
+//CorsMethod1
+//app.UseCors("corspolicy");
 
+//CorsMethod2
+app.UseCors(policyName => policyName.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
 app.UseAuthorization();
 
 app.MapControllers();
