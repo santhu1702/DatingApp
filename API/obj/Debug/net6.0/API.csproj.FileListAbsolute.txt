@@ -68,6 +68,8 @@ C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\n
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\API.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\API.pdb
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\LoggingAdvanced.Console.dll
+C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -76,6 +78,7 @@ C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\n
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -84,6 +87,9 @@ C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\n
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Scrutor.dll
+C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -122,3 +128,4 @@ C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\obj\Debug\n
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\obj\Debug\net6.0\API.pdb
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\Quadrant\Documents\Learning Path\netCore\DataingApp\Api\API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
