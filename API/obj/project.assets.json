@@ -2949,11 +2949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Quadrant\\Documents\\Learning Path\\netCore\\DataingApp\\Api\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Quadrant\\Documents\\Learning Path\\netCore\\DatingApp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Quadrant\\Documents\\Learning Path\\netCore\\DataingApp\\Api\\API\\API.csproj",
+      "projectPath": "C:\\Users\\Quadrant\\Documents\\Learning Path\\netCore\\DatingApp\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Quadrant\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Quadrant\\Documents\\Learning Path\\netCore\\DataingApp\\Api\\API\\obj\\",
+      "outputPath": "C:\\Users\\Quadrant\\Documents\\Learning Path\\netCore\\DatingApp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Quadrant\\AppData\\Roaming\\NuGet\\NuGet.Config",
