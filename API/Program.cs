@@ -11,7 +11,7 @@ using Swashbuckle.AspNetCore.Filters;
 using System.Data.Common;
 using System.Text;
 using API.Extentions;
-
+using API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +26,7 @@ var config = configuration.Build();
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddApplicationServices(config);
@@ -48,7 +49,7 @@ builder.Services.AddCors();
 builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
-    {
+    { 
         Description = "Standard Authorization header using the Bearer scheme (\"bearer {token}\")",
         In = ParameterLocation.Header,
         Name = "Authorization",
@@ -61,13 +62,16 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseMiddleware<ExceptionMiddleware>();
 
-app.UseHttpsRedirection();
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+
+//}
+
+//app.UseHttpsRedirection();
 app.UseRouting();
 
 #region CorsMethod1

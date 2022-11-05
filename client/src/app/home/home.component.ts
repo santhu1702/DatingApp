@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   registerMode = false;
   users: any;
-  devUrl = 'https://localhost:44389';
+  devUrl = 'https://localhost:7067';
 
   constructor(private http: HttpClient) {}
 

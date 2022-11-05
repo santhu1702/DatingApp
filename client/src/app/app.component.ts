@@ -11,18 +11,18 @@ import { AccountService } from './_Services/account.service';
 export class AppComponent implements OnInit {
   title = 'The DatingApp';
   user: any;
-  devUrl = 'https://localhost:44389';
+  devUrl = 'https://localhost:7067';
 
   constructor( private accountService :AccountService) {}
 
   ngOnInit() {
-    this.setCurrentUser();
+   // this.setCurrentUser();
   }
 
-  setCurrentUser() {
-    const user: User = JSON.parse(localStorage.getItem('user') || '{}');
-    this.accountService.setCurrentUser(user);
-  }
+  // setCurrentUser() {
+  //   const user: User = JSON.parse(localStorage.getItem('user') || '{}');
+  //   this.accountService.setCurrentUser(user);
+  // }
 
  
 }
