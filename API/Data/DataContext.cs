@@ -1,6 +1,5 @@
 ﻿using API.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.CodeAnalysis;
 
 namespace API.Data
 {

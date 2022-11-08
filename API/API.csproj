@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="LoggingAdvanced.Console" Version="0.4.1" />
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
@@ -22,10 +23,6 @@
 	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.0" />
 	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	  <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
   </ItemGroup>
 
 </Project>

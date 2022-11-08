@@ -4,10 +4,6 @@ using API.Entities;
 using API.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -20,26 +16,20 @@ namespace API.Controllers
 
         //private readonly IConfiguration _configuration;
 
-
-
         public AccountController(DataContext context, ITokenService tokenServices)
         {
             _context = context;
             _tokenServices = tokenServices;
         }
 
-
         private async Task<bool> UserExists(string username)
         {
             return await _context.Users.AnyAsync(x => x.UserName == username.ToLower());
         }
 
-
-
         [HttpPost("register")]
         public async Task<ActionResult<userdto>> Register(RegisterDTO registerDTO)
         {
-
             if (await UserExists(registerDTO.Username)) return BadRequest("Username is taken");
 
             using var hmac = new HMACSHA512();
@@ -59,7 +49,6 @@ namespace API.Controllers
                 Username = user.UserName,
                 Token = await _tokenServices.CreateToken(user)
             };
-                    
         }
 
         [HttpPost("login")]
@@ -79,13 +68,7 @@ namespace API.Controllers
             {
                 Username = user.UserName,
                 Token = await _tokenServices.CreateToken(user)
-
-
             };
         }
-
-
-
-
     }
 }

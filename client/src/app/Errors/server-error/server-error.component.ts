@@ -11,11 +11,14 @@ export class ServerErrorComponent implements OnInit {
 
   constructor(private router:Router) {
     debugger
-    const navigation = router.getCurrentNavigation();
-    this.error = navigation?.extras?.state
+    const navigation = this.router.getCurrentNavigation();
+    this.error = navigation?.extras.state?.['error']
+    // this.error = JSON.stringify(this.error)
+    console.log(this.error)
    }
 
   ngOnInit(): void {
+   
   }
 
 }

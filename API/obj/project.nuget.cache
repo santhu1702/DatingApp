@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Q8cv9yqJQJNbR/xCCTre8Rx+Z4fWXtN/1887pWl+pVYIAlB6UAdee0wp4puWIy0KcE9JPEWvgXFx/8NEP53Vow==",
+  "dgSpecHash": "oPpT+h+ef/LhI3ZCNr3JSsaJ7C8DQYycR3Zu1d6wAgMdvjjbFgBZAJdqTlzwDsooJ6innwMNY8buUMS0ppuNyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Quadrant\\Documents\\Learning Path\\netCore\\DatingApp\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Quadrant\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Quadrant\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Quadrant\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Quadrant\\.nuget\\packages\\loggingadvanced.console\\0.4.1\\loggingadvanced.console.0.4.1.nupkg.sha512",
     "C:\\Users\\Quadrant\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
-    "C:\\Users\\Quadrant\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Quadrant\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Quadrant\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Quadrant\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Quadrant\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",

@@ -1,4 +1,5 @@
 ﻿using API.Data;
+using API.Helpers;
 using API.Interfaces;
 using API.Services;
 using Microsoft.EntityFrameworkCore;
@@ -10,9 +11,12 @@ namespace API.Extentions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<ITokenService, TokenServices>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DevConnection")));
 
             #region need to implemnt for production
+
             // services.AddDbContext<DataContext>(options =>
             //{
             //    var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
@@ -42,7 +46,7 @@ namespace API.Extentions
             //        var pgHost = pgHostPort.Split(":")[0];
             //        var pgPort = pgHostPort.Split(":")[1];
 
-            //        connStr = $"Server={pgHost};Port={pgPort};User Id={pgUser};Password={pgPass};Database={pgDb}; SSL Mode=Require; Trust Server Certificate=true"; 
+            //        connStr = $"Server={pgHost};Port={pgPort};User Id={pgUser};Password={pgPass};Database={pgDb}; SSL Mode=Require; Trust Server Certificate=true";
             //    }
 
             //    // Whether the connection string came from the local development configuration file
@@ -50,7 +54,7 @@ namespace API.Extentions
             //    options.UseNpgsql(connStr);
             //});
 
-            #endregion
+            #endregion need to implemnt for production
 
             return services;
         }

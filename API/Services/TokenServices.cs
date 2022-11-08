@@ -1,7 +1,5 @@
 ﻿using API.Entities;
 using API.Interfaces;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -14,8 +12,6 @@ namespace API.Services
     {
         private readonly SymmetricSecurityKey _key;
 
-    
-
         public TokenServices(IConfiguration config)
         {
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["AppSettings:Token"]));
@@ -27,8 +23,6 @@ namespace API.Services
             {
                 new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString())
             };
-
-
 
             var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
 

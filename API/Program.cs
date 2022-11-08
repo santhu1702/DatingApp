@@ -49,7 +49,7 @@ builder.Services.AddCors();
 builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
-    { 
+    {
         Description = "Standard Authorization header using the Bearer scheme (\"bearer {token}\")",
         In = ParameterLocation.Header,
         Name = "Authorization",
@@ -64,12 +64,12 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseMiddleware<ExceptionMiddleware>();
 
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
 
-//}
+}
 
 //app.UseHttpsRedirection();
 app.UseRouting();
@@ -89,4 +89,20 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 });
-app.Run();
+
+# region Dependency Injection
+using var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+try
+{
+    var context = services.GetRequiredService<DataContext>();
+    await context.Database.MigrateAsync();
+    await Seed.SeedUsers(context);
+}
+catch (Exception ex)
+{
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    logger.LogError(ex, "error occur during migration");
+}
+#endregion
+await app.RunAsync();
