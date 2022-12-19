@@ -10,13 +10,15 @@ export class TestErrorsComponent implements OnInit {
   devUrl = 'https://localhost:7067/api/';
   validationErrors : string[] = [];
 
+  user: any  ;
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void { }
 
   get404Error() {
     this.http.get(this.devUrl + 'buggy/not-found').subscribe({
-      next: (response) => console.table(response),
+      next: (response) => console.table(response) ,
       error: (err) => {
         console.log(err);
       },

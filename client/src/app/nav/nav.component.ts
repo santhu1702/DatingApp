@@ -21,6 +21,7 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {}
 
   login() {
+
     this.accountservice.login(this.model).subscribe({
       next: (response) => this.router.navigateByUrl('/members'),
       error: (err) => {console.log(err);},
@@ -32,4 +33,6 @@ export class NavComponent implements OnInit {
     this.accountservice.logOut();
     this.router.navigateByUrl('/');
   }
+
+
 }
